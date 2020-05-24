@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞鸟</title>
+    <script type="text/javascript">
+        document.write("HELLO WORLD!")
+    </script>
+    <style type="text/css">
+        h1 {color:red}
+        p {color:blue}
+    </style>
+</head>
+<body bgcolor="pink">
+    <h1>我的HTML网页示例</h1>
+    <p>测试</p>
+    <a href="http://www.baidu.com">百度当前页面</a>
+    <br/>
+    <a href="http://www.baidu.com" target="_blank">百度新页面</a>
+    <br/>
+    <a href="http://www.baidu.com" target="_blank" title="链接到百度首页">百度(鼠标有提示信息)</a>
+    <br/>
+    <a href="mailto:1197678031@qq.com">给自己发邮件</a>
+    <!--链接结束-->
+    <hr  size="3" color="#0000.33">
+    <h1>飞鸟相与还</h1>
+    
+    <img src="../img/1.jpg" width="200px" height="200px" border="5"  alt="无图" hspace="30" align="right"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;水是眼波横，山是眉峰聚。山气日夕佳，飞鸟相与还。
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+    <table width="250px" heigth="250px" border="2" bordercolor="#0033FF" cellspadding="0" cellspacing="0">
+        <tr>
+            
+            <td align="center">
+                <p>水是眼波横,山是眉峰聚.</p>
+                <p>山气日夕佳,飞鸟相与还.</p>
+                
+            </td>
+            
+            <td align="center"><img aglin="right" src="../img/2.jpg" width="100px" width="100px"></td>
+        </tr>
+        <tr>
+            
+            <td align="center">
+                <p>水是眼波横,山是眉峰聚.</p>
+                <p>山气日夕佳,飞鸟相与还。</p>
+                
+            </td>
+            
+            <td align="center"><img aglin="right" src="../img/2.jpg" width="100px" width="100px"></td>
+        </tr>
+    </table>
+    <h2>本周任务计划</h2>
+    <ul>
+        <li>去书店买书</li>
+        <li>逛街</li>
+        <li>见客户</li>
+        <li>学习</li>
+    </ul>
+    <h2>本周上榜图书</h2>
+    <ul type="circle">
+        <li>《花非花》</li>
+        <li>《雾非雾》</li>
+        <li>《随遇而安》</li>
+        <li>《朝花夕拾》</li>
+    </ul>
+    <h2>本周上榜图书</h2>
+    <ul type="square">
+        <li>《花非花》</li>
+        <li>《雾非雾》</li>
+        <li>《随遇而安》</li>
+        <li>《朝花夕拾》</li>
+    </ul>
+    <h2>本周任务计划</h2>
+    <ol>
+        <li>去书店买书</li>
+        <li>逛街</li>
+        <li>见客户</li>
+        <li>学习</li>
+    </ol>
+    <hr/>
+    <form action="#" method="#">
+        组合框：<br/>
+        <select name="select1" multiple="multiple">
+            <option>《呼啸山庄》</option>
+            <option selected="selected">《大卫》</option>
+            <option>《双城记》</option>
+            <option>《雾都孤儿》</option>
+            <option>《傲慢与偏见》</option>
+            <option>《鲁宾孙漂流记》</option>
+        </select>
+        列表框：
+        <select name="select2">
+            <option>英国名著</option>
+            <option>法国名著</option>
+            <option>俄国名著</option>
+            <option selected="selected">中国名著</option>
+            <option>其他国家的名著</option>
+        </select>
+        <select>
+            <optgroup label="洛阳">
+                <option>龙门石窟</option>
+                <option>白云山</option>
+                <option>白马寺</option>
+                <option>花果山</option>
+            </optgroup>
+            <optgroup label="开封">
+                <option>开封府</option>
+                <option>清明上河图</option>
+                <option>包公祠</option>
+                <option>大相国寺</option>
+            </optgroup>
+        </select>
+    </form>
+    <br/><br/>
+    <form method="POST" action="http://www.example.com">
+        普通文本框：<input type="text" name="username" /><br/>
+        密码输入框：<input type="password" name="userpass" /><br/>
+        复&nbsp;&nbsp;&nbsp;选&nbsp;&nbsp;&nbsp;&nbsp;框:
+        <input type="checkbox" name="username" /><br/>
+        单选按钮框：<input type="radio" name="userpass"/><br/>
+        文件选择框：
+        <input type="file"  name="selectPhoto" /><br/>
+        <input type="button"  name="btn1" value="button按钮"/>
+        <input type="submit"  name="btn1" value="submit按钮"/>
+        <input type="reset"  name="btn1" value="reset按钮"/>
+    </form>
+    <form method="get" action="http://www.baidu.com">
+        请写下你最想说的话：<br/>
+        <textarea  cols="60" rows="10" id="contactus" name="contactus"></textarea>
+    </form>
+    <br/>
+    <hr/>
+    <form name="usermodify" action="#" method="POST">
+        <table border="1" bordercolor="#B3B6EE" width="60%" align="center" 
+        height="360" cellpadding="0" cellspacing="0">
+            <caption>用户资料修改页面</caption>
+            <tr>
+                <th width="40%" align="right">真实姓名：</th>
+                <td width="60%">
+                    <input name="realname" type="text" value="李开心"
+                    readonly="readonly" disabled="disabled" />
+                </td>
+            </tr>
+            <tr>
+                <th width="40%" align="right">用户名称：</th>
+                <td width="60%">
+                    <input name="realname" type="text" value=nickname
+                    />
+                </td>
+            </tr>
+            <tr>
+                <th align="right">密码：</th>
+                <td>
+                    <input name="pass" type="password" />
+                </td>
+            </tr>
+            <tr>
+                <th align="right">性别：</th>
+                <td>
+                    <input name="gender" type="radio"/>男
+                    <input name="gender" type="radio"/>女
+                </td>
+            </tr>
+            <tr>
+                <th align="right">身份证号：</th>
+                <td>
+                    <input name="id" type="text" maxlength="18"/>
+                </td>
+            </tr>
+            <tr>
+                <th align="right">手机号码：</th>
+                <td>
+                    <input name="namber" type="text" maxlength="11"/>
+                </td>
+            </tr>
+            <tr>
+                <th align="right">兴趣爱好：</th>
+                <td>
+                    <input name="aihao" type="checkbox" value="唱歌"/>唱歌
+                    <input name="aihao" type="checkbox" value="跳舞"/>跳舞
+                    <input name="aihao" type="checkbox" value="画画"/>画画
+                    
+                </td>
+            </tr>
+            <tr>
+                <th align="right">民族：</th>
+                <td>
+                    <select name="minzu">
+                        <option>汉族</option>
+                        <option>蒙古族</option>
+                        <option>维吾尔族</option>
+                        <option>傣族</option>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="concent">
+        <div id="top"></div>
+        <div id="left"></div>
+        <div id="main"></div>
+        <div id="footer"></div>
+    </div>
+
+</body>
+</html>
