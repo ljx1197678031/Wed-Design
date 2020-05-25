@@ -126,6 +126,8 @@
         <input type="submit"  name="btn1" value="submit按钮"/>
         <input type="reset"  name="btn1" value="reset按钮"/>
     </form>
+    <br/>
+    <br/>
     <form method="get" action="http://www.baidu.com">
         请写下你最想说的话：<br/>
         <textarea  cols="60" rows="10" id="contactus" name="contactus"></textarea>
@@ -196,12 +198,123 @@
             </tr>
         </table>
     </form>
+    <br/>
+    <br/>
+    <!--层布局视图-->
     <div id="concent">
-        <div id="top"></div>
-        <div id="left"></div>
-        <div id="main"></div>
-        <div id="footer"></div>
+        <div id="top">1</div>
+        <div id="left">2</div>
+        <div id="main">3</div>
+        <div id="footer">4</div>
     </div>
-
+    <style>
+        #content{
+            width:80%;
+        }
+        #top{
+            background-color: antiquewhite;
+        }
+        #left{
+            background-color: pink;
+            width:30%;
+            float:left;
+        }
+        #main{
+            background-color:aqua;
+            width:70%;
+            float:left;
+        }
+        #footer{
+            background-color: blue;
+        }
+    </style>
+    <br/>
+    <br/>
+    <hr/>
+    <!--m模拟一个新闻网站结构-->
+    <h1>NEWS WEBSITE</h1>
+        <p>some text. some text. some text...</p>
+        <!--省略其他内容-->
+        <div class="NEWS">
+            <h2>News headline 1</h2>
+            <p>some text. some text. some text...</p>
+            <!--省略其他内容-->
+        </div>
+        <div class="NEWS">
+            <h2>News headline 2</h2>
+            <p>some text. some text. some text...</p>
+            <!--省略其他内容-->
+        </div>
+        <br/>
+        <br/>
+        <hr/>
+    <!--向后台提交表单-->
+    <form>
+        姓名：<input type="text" required/>
+        <input type="submit" value="登录"/>
+    </form>
+    <br/>
+    <!--功能为 ： 下拉框+文本 -->
+    <datalist id="username">
+        <option>赵先生</option>
+        <option>李仙女</option>
+    </datalist>
+    姓名：<input type="text" list="username"/>
+    <br/>
+    <br/>
+    <!--右侧提示语句-->
+    姓名：<input type="text" id="uname"/>
+        <input type="button" value="登录" onclick="javascript:check();"/>
+        <output id="info" name="info"></output>
+    <script>
+        function check(){
+            var uname=document.getElementById("uname").value;
+            if(uname==""){
+                document.getElementsByName("info")[0].value="用户名不能为空";
+            }else{
+                document.getElementsByName("info")[0].innerHTML="";
+            }
+        }
+    </script>
+    <style>
+        #info{
+            color:red;
+        }
+    </style>
+    <br/>
+    <br/>
+    <!--背景提示词-->
+    <input type="search" placeholder="请输入关键字"/>
+    <!--验证电子邮件是否有效-->
+    <form>
+    电子邮件：<input type="email" required/>
+    <input type="submit"/>
+    </form>
+    <!--验证URL是否有效-->
+    <form>
+        URL:<input type="url"/>
+        <input type="submit"/>
+    </form>
+    <br/>
+    <!--日期选择器-->
+    日期：<input type="datetime-local"/>
+    年龄：<input type="number" min="1" max="10" value="5"/>
+    <br/>
+    <input type="range" min="1" max="10" value="5"/>
+    <!--调色板-->
+    <input type="color"/>
+    <br/>
+    <hr/>
+    <!--正则表达式-->
+    <form>
+    手机号码：<input type="tel" pattern="(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}"/>
+    <input type="submit"/>
+    </form>
+    <!--文件的上传-->
+    <input type="file"/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 </body>
 </html>
