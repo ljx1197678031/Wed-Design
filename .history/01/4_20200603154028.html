@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #content{
+            display: box;/*盒布局*/
+            box-orient: horizontal;
+
+            display: -webkit-box;/*针对webkit引擎的浏览器，指谷歌浏览器*/
+            -webkit-box-orient: horizontal;
+
+            display: -moz-box;/*针对Gecko引擎的liu'l火狐浏览器*/
+            -moz-box-orient: horizontal;
+
+
+        }
+        #content p {
+            margin: 10px;
+            padding:15px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px #000000 solid;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>3床前明月光，疑是地上霜。<br/>举头望明月，低头思故乡</p>
+        <p>1床前明月光，疑是地上霜。<br/>举头望明月，低头思故乡</p>
+        <p>2床前明月光，疑是地上霜。<br/>举头望明月，低头思故乡</p>
+    </div>
+</body>
+</html>
